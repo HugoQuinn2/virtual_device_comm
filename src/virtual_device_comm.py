@@ -23,7 +23,7 @@ def handler_actions(data: bytes):
         logger.warning(f"No actions founded for {hex_data}")
 
 @click.group()
-@click.version_option(version='0.1.0')
+@click.version_option(version='0.1.0', prog_name='Virtual Device Comm (VDC)')
 def cli():
     pass
 
