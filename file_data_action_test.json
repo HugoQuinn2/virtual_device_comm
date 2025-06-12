@@ -1,0 +1,32 @@
+{
+    "name": "Bill Aceptor",
+    "version": "1.0",
+    "port": "COM8",
+    "baudrate": 115200,
+    "actions": [
+        {
+            "name": "_no_action",
+            "delay": 0,
+            "request": ["10", "A0", "0A"]
+        },
+        {
+            "name": "turn on",
+            "response": ["10", "A0", "0A"],
+            "delay": 5000,
+            "request": ["0A", "A0", "10"]
+        },
+        {
+            "name": "turn of",
+            "response": ["10", "A0", "FF"],
+            "delay": 5000,
+            "request": ["0A", "A0", "10"]
+        }
+    ],
+    "events": [
+        {
+            "name": "",
+            "response": "",
+            "request": ""
+        }
+    ]
+}
