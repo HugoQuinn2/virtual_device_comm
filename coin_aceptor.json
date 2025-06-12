@@ -1,0 +1,50 @@
+{
+  "name": "ccTalk Coin Acceptor",
+  "version": "1.0",
+  "port": "COM8",
+  "baudrate": 9600,
+  "actions": [
+    {
+      "name": "REQUEST EQUIPMENT CATEGORY ID 'Coin Aceptor'",
+      "delay": 0,
+      "response": ["02", "00", "01", "FE", "FF"],
+      "request": ["01", "0D", "02", "00", "43", "6F", "69", "6E", "20", "41", "63", "63", "65", "70", "74", "6F", "72", "16"]
+    },
+    {
+      "name": "REQUEST PRODUCT CODE 'SR5i'",
+      "delay": 0,
+      "response": ["02", "00", "01", "F4", "09"],
+      "request": ["01", "04", "02", "00", "53", "52", "35", "69", "B6"]
+    },
+    {
+      "name": "REQUEST BUILD CODE 'STD01'",
+      "delay": 0,
+      "response": ["02", "00", "01", "C0", "3D"],
+      "request": ["01", "08", "02", "00", "53", "54", "44", "30", "31", "20", "20", "20", "49"]
+    },
+    {
+      "name": "REQUEST MANUFACTURER ID 'Money Controls'",
+      "delay": 0,
+      "response": ["02", "00", "01", "F6", "07"],
+      "request": ["01", "0E", "02", "00", "4D", "6F", "6E", "65", "79", "20", "43", "6F", "6E", "74", "72", "6F", "6C", "73", "73"]
+    },
+    {
+      "name": "REQUEST SERIAL NUMBER '12345678'",
+      "delay": 0,
+      "response": ["02", "00", "01", "F2", "0B"],
+      "request": ["01", "03", "02", "00", "4E", "61", "BC", "8F"]
+    },
+    {
+      "name": "REQUEST SOFTWARE REVISION 'CRS-F1-V1.09'",
+      "delay": 0,
+      "response": ["02", "00", "01", "F1", "0C"],
+      "request": ["01", "0C", "02", "00", "43", "52", "53", "2D", "46", "31", "2D", "56", "31", "2E", "30", "39", "1A"]
+    },
+    {
+      "name": "REQUEST COMMS REVISION '1.4.2'",
+      "delay": 0,
+      "response": ["02", "00", "01", "04", "F9"],
+      "request": ["01", "03", "02", "00", "01", "04", "02", "F3"]
+    }
+  ]
+}
